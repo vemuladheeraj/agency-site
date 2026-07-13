@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Workflow automation pipeline mockup">
+  <defs>
+    <linearGradient id="pipe-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131b2e"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+    <linearGradient id="pipe-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="12" fill="url(#pipe-bg)"/>
+  <rect x="40" y="40" width="720" height="420" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+  <text x="60" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="14">Make.com Scenario &bull; Lead Pipeline</text>
+  <rect x="80" y="120" width="120" height="80" rx="10" fill="rgba(6,182,212,0.15)" stroke="#06b6d4"/>
+  <text x="140" y="158" text-anchor="middle" fill="#06b6d4" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Form</text>
+  <text x="140" y="178" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">Submit</text>
+  <path d="M200 160 L260 160" stroke="url(#pipe-accent)" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="260" y="120" width="120" height="80" rx="10" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6"/>
+  <text x="320" y="158" text-anchor="middle" fill="#8b5cf6" font-family="system-ui,sans-serif" font-size="12" font-weight="600">CRM</text>
+  <text x="320" y="178" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">Add Lead</text>
+  <path d="M380 160 L440 160" stroke="url(#pipe-accent)" stroke-width="2"/>
+  <rect x="440" y="120" width="120" height="80" rx="10" fill="rgba(255,0,127,0.12)" stroke="#ff007f"/>
+  <text x="500" y="158" text-anchor="middle" fill="#ff007f" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Email</text>
+  <text x="500" y="178" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">Auto-reply</text>
+  <path d="M560 160 L620 160" stroke="url(#pipe-accent)" stroke-width="2"/>
+  <rect x="620" y="120" width="120" height="80" rx="10" fill="rgba(16,185,129,0.15)" stroke="#10b981"/>
+  <text x="680" y="158" text-anchor="middle" fill="#10b981" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Slack</text>
+  <text x="680" y="178" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">Notify</text>
+  <rect x="80" y="280" width="660" height="140" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)"/>
+  <text x="100" y="312" fill="#64748b" font-family="system-ui,sans-serif" font-size="12">Execution log</text>
+  <text x="100" y="340" fill="#10b981" font-family="monospace" font-size="12">Lead captured &rarr; CRM updated &rarr; Email sent &rarr; Team notified</text>
+  <text x="100" y="368" fill="#94a3b8" font-family="monospace" font-size="11">Last run: 2 min ago &bull; 847 leads this month</text>
+  <text x="100" y="396" fill="#06b6d4" font-family="monospace" font-size="11">Avg. response time: 12 seconds</text>
+</svg>

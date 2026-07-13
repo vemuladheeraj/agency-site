@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Gravity Digital</title>
+    <meta name="description" content="Reach out to Gravity Digital for a free consultation call. Tell us about your project, your budget, and what automation or web services you need.">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-config.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="nav-logo">
+                <div class="logo-icon">G</div>
+                <span>Gravity Digital</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn">Get a Free Quote</a>
+            </div>
+            
+            <button type="button" class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Contact Layout Section -->
+    <section class="container contact-layout">
+        
+        <!-- Left Side: Frictionless Form -->
+        <div class="contact-form-card">
+            <h1 class="contact-title">Let's talk about your project.</h1>
+            <p class="contact-subtitle">Fill the form below or just WhatsApp us — whichever feels easier.</p>
+            
+            <form id="agency-contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name *</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="e.g. ramesh@company.in" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="business-type" class="form-label">Business Type *</label>
+                    <select id="business-type" name="business-type" class="form-input" required>
+                        <option value="" disabled selected>Select business scale</option>
+                        <option value="individual">Individual / Freelancer</option>
+                        <option value="small-business">Small Business / Local Shop</option>
+                        <option value="startup">Growing Startup</option>
+                        <option value="mid-size">Mid-size B2B / SaaS Company</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service" class="form-label">Service You Need *</label>
+                    <select id="service" name="service" class="form-input" required>
+                        <option value="" disabled selected>Select service group</option>
+                        <option value="website">Website Design & Development</option>
+                        <option value="app-dev">Web App / Custom Booking Engine</option>
+                        <option value="chatbot">AI WhatsApp / Web Chatbot</option>
+                        <option value="automation">Workflow Automation (Make / Zapier)</option>
+                        <option value="growth">B2B Outbound Sales Pipeline</option>
+                        <option value="ops">Process Documentation / SOPs</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget" class="form-label">Budget Range *</label>
+                    <select id="budget" name="budget" class="form-input" required>
+                        <option value="" disabled selected>Select budget range</option>
+                        <option value="15k-30k">₹15,000 - ₹30,000</option>
+                        <option value="30k-55k">₹30,000 - ₹55,000</option>
+                        <option value="55k-1lakh">₹55,000 - ₹1,00,000</option>
+                        <option value="above-1lakh">Above ₹1,00,000</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Brief Message (Optional)</label>
+                    <textarea id="message" name="message" class="form-input form-message" placeholder="Describe what you want to build or what processes you'd like to automate..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Send Project Request</button>
+            </form>
+        </div>
+        
+        <!-- Right Side: Side Panel -->
+        <div class="contact-info-panel">
+            <div>
+                <h3 class="info-group-title">How we connect</h3>
+                <div class="info-cards">
+                    <div class="info-item-card">
+                        <div class="info-item-icon">💬</div>
+                        <div class="info-item-details">
+                            <h5>WhatsApp Business</h5>
+                            <p>Immediate replies for project questions.</p>
+                            <a href="#" data-site-link="whatsapp-contact" data-site-text>+91 99999 99999</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item-card">
+                        <div class="info-item-icon">✉️</div>
+                        <div class="info-item-details">
+                            <h5>Email Address</h5>
+                            <p>Send details, RFP briefs, or RFQ specs.</p>
+                            <a href="#" data-site-link="email" data-site-text>hello@gravitydigital.in</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item-card">
+                        <div class="info-item-icon">📅</div>
+                        <div class="info-item-details">
+                            <h5>Calendly Booking</h5>
+                            <p>Schedule a 30-min discovery call.</p>
+                            <a href="#" data-site-link="calendly">Book a 30-Min Call &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="info-group-title">Meet the Founders</h3>
+                <div class="founder-profiles">
+                    <div class="founder-small-card">
+                        <div class="founder-small-avatar">A</div>
+                        <h5>Founder 1</h5>
+                        <p>Process Strategy & BA Lead</p>
+                        <a href="#" data-site-link="linkedin" class="social-link">LinkedIn &rarr;</a>
+                    </div>
+                    
+                    <div class="founder-small-card">
+                        <div class="founder-small-avatar">S</div>
+                        <h5>Founder 2</h5>
+                        <p>Tech Strategy & Delivery Lead</p>
+                        <a href="#" data-site-link="linkedin" class="social-link">LinkedIn &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Toast Success Notification (triggers on form submit) -->
+    <div class="toast" id="submit-toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-message">Form submitted successfully! We will contact you within 24 hours.</div>
+    </div>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="whatsapp-widget" id="floating-whatsapp-widget">
+        <span class="whatsapp-tooltip">Chat with a developer</span>
+        <a href="#" data-site-link="whatsapp-quote" class="whatsapp-bubble" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24">
+                <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.335 4.963L2 22l5.233-1.371a9.945 9.945 0 0 0 4.779 1.21h.005c5.505 0 9.989-4.478 9.99-9.984A9.97 9.97 0 0 0 12.012 2zm4.7 13.914c-.258.724-1.258 1.312-1.77 1.365-.47.05-1.077.078-1.748-.135-.41-.13-1.722-.656-3.268-2.03-1.282-1.139-2.148-2.546-2.4-2.98-.25-.436-.027-.673.19-.89.197-.196.438-.51.657-.766.22-.255.292-.437.438-.729.146-.29.073-.545-.036-.763-.11-.218-.985-2.37-1.348-3.245-.35-.85-.71-.735-1.018-.75-.262-.014-.56-.014-.86-.014-.3 0-.785.112-1.194.56-.41.448-1.562 1.527-1.562 3.722 0 2.196 1.6 4.316 1.82 4.62.22.304 3.148 4.805 7.627 6.74.1.043.2.083.3.12 1.07.34 2.045.293 2.818.177.86-.13 1.77-.724 2.02-1.388.25-.664.25-1.233.175-1.389-.075-.156-.275-.25-.575-.4z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">G</div>
+                    <span>Gravity Digital</span>
+                </a>
+                <p class="footer-tagline">
+                    We combine Business Analysis with AI execution to deliver high-performance websites and workflow automation.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" data-site-link="linkedin" class="footer-social-icon" aria-label="LinkedIn">IN</a>
+                    <a href="#" data-site-link="instagram" class="footer-social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links-list">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="services.html" class="footer-link">Services</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item">
+                        <span>💬</span>
+                        <a href="#" data-site-link="phone" data-site-text>+91 99999 99999</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <a href="#" data-site-link="email" data-site-text>hello@gravitydigital.in</a>
+                    </div>
+                    <div class="footer-contact-item" style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn btn-secondary btn-sm btn-block">Book a Free Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Gravity Digital. All rights reserved.</p>
+            <div class="footer-love">
+                Made with <span class="heart-icon">&hearts;</span> in India for the World
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
