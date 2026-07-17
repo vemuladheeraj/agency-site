@@ -2,8 +2,8 @@
  * Central site configuration — update contact details here once.
  */
 const SITE_CONFIG = {
-    phone: '919999999999',
-    phoneDisplay: '+91 99999 99999',
+    phone: '918074773982',
+    phoneDisplay: '+91-8074773982',
     email: 'hello@gravitydigital.in',
     formEmail: 'appworks.dheeraj@gmail.com',
     siteUrl: 'https://gravitydigital.in',

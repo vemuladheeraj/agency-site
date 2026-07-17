@@ -149,39 +149,45 @@ function initContactForm() {
         submitBtn.textContent = 'Sending Request...';
         submitBtn.disabled = true;
 
+        const formData = new FormData(contactForm);
+        formData.set('_subject', `New project request from ${name}`);
+        formData.set('_template', 'table');
+        formData.set('_captcha', 'false');
+        formData.set('_next', `${window.location.origin}/contact.html?submitted=1`);
+
         fetch(`https://formsubmit.co/ajax/${SITE_CONFIG.formEmail}`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify({
-                name,
-                email,
-                business_scale: businessType,
-                service_needed: service,
-                budget_range: budget,
-                message
-            })
+            body: formData
         })
-        .then(res => res.json())
-        .then(data => {
+        .then(async res => {
+            const responseText = await res.text();
+            let data = {};
+
+            try {
+                data = JSON.parse(responseText);
+            } catch {
+                data = { success: true };
+            }
+
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
 
-            if (data.success === 'true' || data.success === true) {
-                showToast('Project request sent! Check your inbox to confirm activation.');
+            if (res.ok && (data.success === 'true' || data.success === true || responseText.includes('success'))) {
+                showToast('Project request sent! We will reach out shortly.');
                 saveOfflineLead({ name, email, businessType, service, budget, message });
                 contactForm.reset();
             } else {
-                showToast('Submission error. Saved offline. We will review.');
+                showToast('Submission issue. Your request was saved locally.');
                 saveOfflineLead({ name, email, businessType, service, budget, message });
             }
         })
         .catch(() => {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-            showToast('Connection issue. Inquiry saved locally.');
+            showToast('Connection issue. Your request was saved locally.');
             saveOfflineLead({ name, email, businessType, service, budget, message });
         });
     });
