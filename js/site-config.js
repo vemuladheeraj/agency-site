@@ -5,7 +5,7 @@ const SITE_CONFIG = {
     phone: '918074773982',
     phoneDisplay: '+91-8074773982',
     email: 'hello@gravitydigital.in',
-    formEmail: 'appworks.dheeraj@gmail.com',
+    formEmail: 'appworks.Dheeraj Vemula@gmail.com',
     siteUrl: 'https://gravitydigital.in',
     siteName: 'Gravity Digital',
     whatsappMessages: {
